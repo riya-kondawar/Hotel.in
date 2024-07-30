@@ -1,7 +1,7 @@
 /*  fsd Task 4:- Hotels/restaurants in Pune */
 
 :root {
-    --color1: #e84393;
+    --color1: #c9c9c9;
     --color2: #ce1313;
     --color3-wine-red: #991616;
     --color4-red: #5D0000;
@@ -14,6 +14,7 @@
     text-decoration: none;
     /* text-transform: capitalize; */
     transition: .2s linear;
+    color: #fff;
 }
 
 html {
@@ -21,6 +22,8 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
     overflow-x: hidden;
+    background-image: radial-gradient(circle, #ffffff, #e5e3ee, #ccc8dd, #b3aecc, #9b94bb, #8d87ad, #7f7a9f, #726d91, #6c6883, #666375, #5f5e67, #595959);
+    background-image: linear-gradient(to left, #ffffff, #e5e3ee, #ccc8dd, #b3aecc, #9b94bb, #8d87ad, #7f7a9f, #726d91, #6c6883, #666375, #5f5e67, #595959);
 }
 
 section {
@@ -32,14 +35,22 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    /* background: #991616; */
-    background: #5D0000;
+    /* background: #59758c; */
+    /* background-image: linear-gradient(to left top, #ffffff, #ece1eb, #e2c3cc, #d4a6a1, #bb8f73, #a17b5c, #886747, #6f5432, #593c2b, #3f2823, #231718, #000000); */
+    background-image: linear-gradient(to left top, #ffffff, #e5e3ee, #ccc8dd, #b3aecc, #9b94bb, #8d87ad, #7f7a9f, #726d91, #6c6883, #666375, #5f5e67, #595959);
+    border-bottom: 1px solid white;
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+header .logo-icon{
+    margin: -10px 0 -20px 30px;
+    height: 70px;
+    width: auto;
+
 }
 
 header .logo {
@@ -48,22 +59,16 @@ header .logo {
     -webkit-text-stroke: 1px #ffffff;
     font-weight: bolder;
     font-family: "Merienda", cursive;
-    margin-left: 30px;
+    /* margin-left: 30px; */
 }
-
-/* header .logo span {
-    columns: var(--color1);
-} */
-
 header .navbar a {
-    font-size: 22px;
+    font-size: 2rem;
     padding: 0 1.5rem;
-    color: #dadada;
     font-family: "Afacad", sans-serif;
 }
 
 header .navbar a:hover {
-    color: #4d4d4d;
+    color: #000000;
 }
 
 header .icons a {
@@ -77,40 +82,40 @@ header .icons a:hover {
 }
 
 .home {
+    top: 0;
     display: flex;
-    align-items: center;
     min-height: 100vh;
-    background: url(https://sunnysworldpune.com/wp-content/uploads/2021/11/The-Ruby-Hilltop-Restaurant-The-Only-Hilltop-Restaurant-In-Pune-at-Sunnys-World-4-1024x576.jpg) no-repeat;
-    /* background: url(https://cf.bstatic.com/xdata/images/hotel/max1024x768/490836403.jpg?k=61f6d092656b904a461d7439072ca875633e42b4135dee3a0cd2c9ff73a2370f&o=&hp=1) no-repeat; */
+    /* background: url(https://sunnysworldpune.com/wp-content/uploads/2021/11/The-Ruby-Hilltop-Restaurant-The-Only-Hilltop-Restaurant-In-Pune-at-Sunnys-World-4-1024x576.jpg) no-repeat; */
+    background: url(https://cf.bstatic.com/xdata/images/hotel/max1024x768/490836403.jpg?k=61f6d092656b904a461d7439072ca875633e42b4135dee3a0cd2c9ff73a2370f&o=&hp=1) no-repeat;
     background-size: cover;
     background-position: center;
+    color: #fff;
 }
 
 .home .content {
-    max-width: 650px;
-    background-color: #ffffff63;
+    max-width: 100%;
+    background-image: linear-gradient(to left top, #ffffff77, #e5e3ee77, #ccc8dd77, #b3aecc77, #9b94bb77, #8d87ad77, #7f7a9f77, #726d9177, #6c688377, #66637577, #5f5e6777, #59595977);
+    /* background-color: #ffffffa6; */
+    color: #fff;
     padding: 30px 30px 30px 30px;
-    margin: auto 0 auto 80px;
+    margin: auto 10rem;
     border-radius: 0 32px;
+
 }
 
 .home .content h1 {
     font-size: 68px;
-    color: #333;
     max-width: 600px;
-    /* margin-top: -20px; */
     line-height: 44px;
 }
 
 .home .content span {
     font-size: 30px;
     margin: -20px 20px 20px 10px;
-    color: #444;
 }
 
 .home .content p {
     font-size: 18px;
-    color: #444;
     /* padding: 20px; */
     margin: 20px;
     max-width: 350px;
@@ -120,40 +125,37 @@ header .icons a:hover {
 .btn{
     /* display: inline-block; */
     margin-top: 1rem;
-    color: #333;
-    background-color: #dfdfdf;
-    border: 3px solid #5D0000;
-    border-radius: 2px 18px;
+    color: #fff;
+    border: 1px solid;
+    border-radius:18px;
     padding: 5px 10px;
     margin: 15px 15px 65px 15px;
     cursor: pointer;
     font-size: 16px;
 }
 
-.content a .btn:hower {
-    background: var(#ffffff);
-    color: #666;
+.content a:hover {
+    background:#00000075;
+    color: #ffffff;
+    border: 1px solid #000000;
 }
 
 /* about */
+.about{
+    background-image: linear-gradient(to right, #ffffff, #e5e3ee, #ccc8dd, #b3aecc, #9b94bb, #8d87ad, #7f7a9f, #726d91, #6c6883, #666375, #5f5e67, #595959);
+}
 .heading{
-    text-align: center;
-    font-size: 60px;
-    color: #c7c7c7;
+    /* background-image: linear-gradient(to left top, #ffffff, #dddce3, #bcb9c7, #9c98ac, #7d7891, #6b637a, #594f64, #483b4f, #3a2d39, #2a1f26, #191316, #000000); */
+    background-image: linear-gradient(to top, #9691ae, #8984a2, #7d7896, #716c8a, #65607e, #5e5875, #56516c, #4f4963, #49445a, #443e52, #3e3949, #383441);    text-align: center;
+    font-size: 46px;
+    color: #ffffff;
     padding: 10px;
-    background: var(--color4-red);
+    /* background: ; */
     cursor: pointer;
 }
-
-/* .about .row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
 .about .content{
     padding: 20px;
-    width: 100%;
+    width: auto;
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -161,56 +163,54 @@ header .icons a:hover {
     /* text-align: center; */
     /* flex-flow: row wrap; */
     grid-auto-flow: row dense;
-    /* background: url(https://c4.wallpaperflare.com/wallpaper/858/864/47/interior-interior-design-indoors-wallpaper-preview.jpg) no-repeat;
-    background-size: cover; */
 }
-.about h1{
-    font-size: 10rem;
+
+.about .info-content p{
+    font-size: 7rem;
     font-weight: bolder;
-    line-height: 80px;
-    align-items: end;
-    /* text-align: start; */
-    flex: 100px;
+    line-height: 60px;
+    text-align: start;
+    padding: 20px 20px 0px 20px;
+    margin: 20px;
 }
-.about .info-content{
-    display: grid;
+.about .info-content ul{
+    font-size: 20px;
+    padding: 10px 20px 20px 40px;
+    margin: 20px;
 }
-.about p{
-    padding: 10px;
-    font-size: 18px;
+.about img{
+    height: 450px;
+    margin: 20px;
+    padding: 20px;
 }
 
 /* Hotel section */
 
 .sub-heading{
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #070707;
-    padding: 2px;
+    padding: 2rem;
     background: #cfcfcf;
 }
 
-
 .card-parent {
-    padding: 30px;
+    padding: 3rem;
     /* margin: 20px; */
-    background-color: var(--color4-red);
+    /* background-color: ; */
     white-space: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
 }
 .card-child {
-    /* height: 300px; */
-    /* width: 300px; */
-    /* background-color: white; */
     /* margin: 10px; */
     display: inline-block;
-    width: 280px;
-    height: 400px;
+    width: 28rem;
+    height: 40rem;
     border: 2px solid #ffffff;
-    background-color: #000000;
-    border-radius: 0 28px;
-    margin: 20px;
+    /* background-color: #000000; */
+    border-radius: 0 2.8rem;
+    margin: 2rem;
     
 }
 .card-photo{
@@ -220,33 +220,40 @@ header .icons a:hover {
     border-bottom: 2px solid #fff;
 }
 .card-name{
-    padding: 3px 7px;
-    font-size: 26px;
+    padding: 0.5rem 1rem;
+    font-size: 2.6rem;
     width: 100%;
     height: auto;
-    color: white;
     font-weight: 400;
+}
+.card-child p{
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 14px;
+    height: 5rem;
+    width: 100%;
 }
 .hotel .price{
     padding: 7px;
     font-size: 20px;
-    width: 100%;
+    width: auto;
     border: 2px 0px 2px 0px solid white;
-    color: #ffffff;
-    background-color: #8f1717;
-
 }
 .btn2{
     /* display: inline-block; */
     margin-top: 1rem;
     color: #d8d8d8;
-    background-color: var(--color4-red);
+    /* background-color: ; */
     border: 2px solid #fff;
-    border-radius: 2px 18px;
-    padding: 5px 10px;
+    border-radius: 18px;
+    padding: .4rem 0.8rem;
     margin: 15px 15px 65px 15px;
-    cursor: pointer;
-    font-size: 16px;
+    font-size: 12px;
+}
+.btn2:hover {
+    background:#644f4f75;
+    color: #ffffff;
+    border: 2px solid #ffffff;
 }
 
 
@@ -254,52 +261,35 @@ header .icons a:hover {
 
 /* Footer */
 footer {
-    padding: 20px;
+
+    padding: 40px;
     width: 100%;
     height: 30vh;
-    /* background-color: #cb89db; */
-    background-color: #7593af;
-    color: white;
+    bottom: 0;
+    background-color: #000000;
+    color: #fff;
     text-align: center;
-    /* display: flex; */
-    align-items: center;
-    justify-content: center;
 }
 
 .icons {
     height: 10vh;
-    padding: 10px;
+    padding: 1rem;
     /* margin: 20px; */
-    font-size: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: 2.4rem;
+    display: inline;
 }
 
 footer a {
-    padding: 5px;
-    color: white;
+    padding: 0.5rem;
     /* text-align: center; */
 }
 
 footer p {
-    font-size: 20px;
-    padding: 5px;
-    margin-bottom: 10px;
-
+    font-size: 2rem;
+    padding: 0.5rem;
 }
 
 /* end footer */
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -323,7 +313,7 @@ footer p {
     width: 100%;
     border-radius: 18px;
 } */
-
+/* 
 .capsules {
     padding: 0px 10px;
 }
@@ -334,7 +324,6 @@ footer p {
     font-size: 12px;
     padding: 0px 8px;
     margin: 5px;
-    /* margin: 10px; */
 }
 
 .text {
@@ -362,4 +351,4 @@ button {
 .button {
     text-align: center;
 
-}
+}  */
