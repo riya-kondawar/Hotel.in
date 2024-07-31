@@ -142,7 +142,9 @@ header .icons a:hover {
 
 /* about */
 .about {
-    background-image: linear-gradient(to right, #ffffff, #e5e3ee, #ccc8dd, #b3aecc, #9b94bb, #8d87ad, #7f7a9f, #726d91, #6c6883, #666375, #5f5e67, #595959);
+    /* background-image: linear-gradient(to right, #ffffff, #e5e3ee, #ccc8dd, #b3aecc, #9b94bb, #8d87ad, #7f7a9f, #726d91, #6c6883, #666375, #5f5e67, #595959); */
+    background-image: radial-gradient(circle, #a3a1b3, #9c99ae, #9491aa, #8d89a5, #8681a0, #807b98, #797591, #736f89, #6c697d, #666471, #5f5e65, #595959);
+
 }
 
 .heading {
