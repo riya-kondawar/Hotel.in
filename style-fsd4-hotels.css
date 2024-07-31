@@ -216,7 +216,8 @@ header .icons a:hover {
     width: 28rem;
     height: 40rem;
     border: 2px solid #ffffff;
-    background-color: #000000;
+    /* background-image: linear-gradient(to left top, #acacac, #a3a1ab, #9a96a9, #908ca8, #8781a6, #807a9f, #797498, #726d91, #6c6883, #666375, #5f5e67, #595959); */
+    background-image: linear-gradient(to left top, #8a83a6, #8780a6, #857da6, #827aa5, #7f77a5, #756e9a, #6c648e, #625b83, #504a6b, #3e3954, #2d293e, #1d1a29);    /* background-color: #000000; */
     border-radius: 0 2.8rem;
     margin: 2rem;
     box-shadow: -.4rem .5rem 1rem .1rem black;
@@ -235,7 +236,7 @@ header .icons a:hover {
     font-size: 2.6rem;
     width: 100%;
     height: auto;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .card-child p {
@@ -247,7 +248,7 @@ header .icons a:hover {
 }
 .card-bottom{
     display: flex; 
-    align-items: center;
+    align-items: baseline;
     justify-content: space-around;
 }
 .hotel .price {
@@ -263,13 +264,14 @@ header .icons a:hover {
 .btn2 {
     /* display: inline-block; */
     /* margin-top: 1rem; */
-    color: #d8d8d8;
+    color: #ffffff;
     /* background-color: ; */
-    border: 1px solid #000000;
+    border: 1px solid #ffffff;
     border-radius: 18px;
     padding: .4rem 0.8rem;
     margin: 20px;
     font-size: 16px;
+    font-weight: 400;
 }
 
 .btn2:hover {
