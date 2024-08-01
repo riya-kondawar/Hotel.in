@@ -165,30 +165,41 @@ header .icons a:hover {
     flex-wrap: wrap;
     align-items: center;
     /* text-align: center; */
-    /* flex-flow: row wrap; */
-    grid-auto-flow: row dense;
+    flex-flow: row wrap;
+    /* grid-auto-flow: row dense; */
 }
 
 .about .info-content p {
-    font-size: 7rem;
+    font-size: 6rem;
     font-weight: bolder;
-    line-height: 6rem;
-    text-align: start;
+    line-height: 5rem;
+    /* text-align: start; */
     padding: 2rem 2rem 0px 2rem;
     margin: 2rem;
+}
+.about #content2 p{
+    text-align: end;
+    display: flex;
+    flex-direction: column;
 }
 
 .about .info-content ul {
     font-size: 2rem;
-    padding: 1rem 2rem 2rem 4rem;
-    margin: 2rem;
+    padding: 1rem 2rem 0 4rem;
+    margin: 2rem 2rem 0 2rem ;
 }
 
 .about img {
     height: 45rem;
-    margin: 4rem;
+    margin: 4rem 2rem;
     box-shadow: .5rem .5rem 1rem .1rem black;
     border-radius: 0.8rem;
+}
+.about .content .info-content #button2{
+    margin: -2rem 0 0 35rem;
+}
+.about .content .info-content #button3{
+    margin: -2rem 0 0 45rem;
 }
 
 /* Hotel section */
@@ -296,13 +307,16 @@ header .icons a:hover {
 /* Footer */
 footer {
     font-family: var(--font-main);
-    padding: 40px;
+    padding: 3rem;
     width: 100%;
     height: 30vh;
     bottom: 0;
     border-top: 2px solid white;
     background-image: linear-gradient(to right bottom, #e1e0e7, #cbc9d6, #b5b1c6, #9f9bb5, #8a85a5, #7c7797, #6f6989, #625c7c, #59546d, #4f4b5f, #464351, #3d3b44);    color: #fff;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .icons {
@@ -319,8 +333,9 @@ footer a {
 }
 
 footer p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 0.5rem;
+    line-height: 1rem;
 }
 
 /* end footer */
